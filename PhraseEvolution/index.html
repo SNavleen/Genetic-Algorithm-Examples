@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.min.js"></script>
+
+    <!-- <script type="text/javascript" src="../node_modules/linear-algebra/dist/linear-algebra.js"></script> -->
+    <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.4/seedrandom.min.js"></script> -->
+    
+    <script type="text/javascript" src="Chromosomes.js"></script>
+    <script type="text/javascript" src="Population.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+  </head>
+  <body>
+    <button onclick="start()">Start</button>
+    <br>
+    <div>
+      <span style="display: inline;">
+        Best gene in the population: 
+        <h3 style="display: inline;" id="best">
+        </h3>
+      </span>
+      <h4>
+        <span>
+          Current generation: 
+        </span>
+        <span id="currentGeneration">
+        </span>
+      </h4>
+      <h4>
+        <span>
+          Average fitness: 
+        </span>
+        <span id="averageFitness">
+        </span>
+      </h4>
+    </div>
+    <div>
+      <p id="population">
+      </p>
+    </div>
+  </body>
+</html>
